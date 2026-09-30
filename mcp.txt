@@ -1,0 +1,33 @@
+Model Context Protocol (MCP)
+
+Model Context Protocol, commonly known as MCP, is an open standard designed to connect artificial intelligence models with external data sources, tools, and systems. It provides a universal communication layer between AI applications and external capabilities. Instead of building custom integrations for every AI application, developers can use MCP to create a standard way for AI models to access information and perform actions.
+
+Traditional AI applications often face a limitation: the model itself does not have direct access to private data, company systems, databases, or external tools. MCP solves this problem by allowing AI systems to connect with external resources through a structured protocol. This enables AI assistants to become more useful because they can retrieve information, execute tasks, and interact with real-world systems.
+
+The basic architecture of MCP contains three main components: MCP Host, MCP Client, and MCP Server.
+
+The MCP Host is the main AI application where the user interacts with the AI assistant. Examples include AI chat applications, developer tools, or enterprise assistants. The host manages the overall AI experience and provides the environment where the model operates.
+
+The MCP Client works as a communication bridge between the AI application and MCP Servers. It manages connections, sends requests, receives responses, and handles communication using the MCP protocol. The client allows the AI model to discover available tools and resources provided by different servers.
+
+The MCP Server provides external capabilities to the AI model. It can expose tools, resources, and prompts that the AI can use. A server may connect to databases, files, APIs, business systems, or other external services. For example, a database MCP Server can allow an AI assistant to search customer records, while a document MCP Server can provide access to company policies.
+
+One of the most important features of MCP is Tools. Tools allow AI models to perform actions. A tool is usually a function that the AI can call when needed. For example, a calculator tool can perform mathematical operations, an email tool can send messages, and a database tool can search information. Tools contain descriptions, input parameters, and output formats so that the AI model understands how to use them.
+
+Another important feature of MCP is Resources. Resources provide information to AI models without performing an action. They are used for accessing external data such as documents, files, databases, and knowledge bases. For example, an organization can create a resource that provides access to employee policies, product documentation, or customer information. The AI can read these resources and use the information to generate accurate responses.
+
+MCP also supports Prompts. Prompts allow developers to create reusable instructions or workflows for AI models. Instead of writing the same instructions repeatedly, developers can define structured prompts that can be reused by different applications.
+
+A major advantage of MCP is tool discovery. When an AI application connects to an MCP Server, it can discover what tools and resources are available. The AI does not need every capability built directly into its code. It can dynamically understand available functions and decide which tool is suitable for a user's request.
+
+For example, consider an AI customer support assistant. The assistant may connect to multiple MCP Servers. A customer database server can provide customer information, a document server can provide company policies, and an email server can send responses. When a user asks a question, the AI can select the required tools and resources automatically.
+
+MCP is especially useful for building AI agents. AI agents are systems that can understand goals, make decisions, and use tools to complete tasks. MCP provides agents with a standardized way to access external capabilities. Instead of creating custom connections for every tool, developers can use MCP servers that follow the same communication pattern.
+
+Security is also an important part of MCP systems. Since AI applications can access external tools and data, proper permissions and authentication are required. Developers need to control which tools an AI can use and what data it can access. For example, an AI assistant may have permission to read customer information but not delete records from a database.
+
+MCP is becoming important in modern AI engineering because it helps create flexible, scalable, and connected AI systems. It separates AI reasoning from external capabilities. The AI model focuses on understanding requests and making decisions, while MCP servers provide access to tools and information.
+
+In the future, MCP can enable more advanced AI ecosystems where different applications, agents, and services communicate through a common protocol. Developers will be able to create powerful AI assistants that can work with databases, business applications, documents, and APIs without creating separate integrations for every system.
+
+Overall, Model Context Protocol provides a foundation for connecting AI models with the real world. By combining AI reasoning with external tools and resources, MCP helps developers build more capable, intelligent, and practical AI applications.
