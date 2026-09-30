@@ -1,2 +1,12 @@
-# mcp-tool-calling-agent
-A beginner-friendly AI agent built with MCP, LangChain, and Groq that enables LLM-based tool calling and external tool integration.
+# MCP Tool Calling AI Agent
+
+AI agent built using:
+- MCP
+- LangChain
+- Groq
+
+Features:
+- MCP tool discovery
+- LLM tool calling
+- Tool execution
+- MCP server integration
